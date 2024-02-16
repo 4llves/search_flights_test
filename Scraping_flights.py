@@ -9,14 +9,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver import Keys, ActionChains
 from bs4 import BeautifulSoup
 
-
-text_in_departures = "Tucuruí" #str(input('Insira o nome da cidade que inicia seu site: '))
 input_departures = "BEL" #str(input('Digite as siglas do aeroporto de partida: '))
-date_departure = "16/06/2024"
-text_in_arrivals = "Para onde?"
-input_arrivals = "GRU"
-date_arrivals = "20/06/2024"
-value_travels = 500
+date_departure = "16/06/2024" #data de ida
+input_arrivals = "GRU" #str(input('Digite as siglas do aeroporto de chegada: '))
+date_arrivals = "20/06/2024" #data de volta
+value_travels = 500 #digite o valor que podes pagar em uma passagem
 
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
@@ -26,7 +23,7 @@ driver.get('https://www.google.com/travel/flights/')
 
 t.sleep(5)
 
-# Encontre um elemento usando XPath
+# Usando XPath para encontrar onde vou digitar as siglas dos aeroportos
 departures = driver.find_element(By.XPATH, "(//div[contains(@class, 'e5F5td BGeFcf')]//input)[1]")
 arrivals = driver.find_element(By.XPATH, "(//div[contains(@class, 'e5F5td vxNK6d')]//input)[1]")
 
@@ -73,8 +70,8 @@ driver.find_element(By.XPATH, "//div[contains(@class, 'xFFcie')]//button").send_
 t.sleep(1)
 
 '''
-    Iremos salvar o primeiro valor da passagem encontrado para fazer o comparativo se está igual ou menor que o valor
-    que tenho em mãos
+    Iremos capturar o primeiro valor da passagem encontrado para fazer o comparativo se está igual ou menor que o valor
+    que informei logo no inicio
 '''
 data = driver.find_element(By.XPATH, "(//ul[contains(@class, 'Rk10dc')])[1]")
 html = data.get_attribute("innerHTML")
