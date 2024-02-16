@@ -9,11 +9,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver import Keys, ActionChains
 from bs4 import BeautifulSoup
 
-input_departures = "BEL" #str(input('Digite as siglas do aeroporto de partida: '))
+input_departures = "REC" #str(input('Digite as siglas do aeroporto de partida: '))
 date_departure = "16/06/2024" #data de ida
-input_arrivals = "GRU" #str(input('Digite as siglas do aeroporto de chegada: '))
-date_arrivals = "20/06/2024" #data de volta
-value_travels = 500 #digite o valor que podes pagar em uma passagem
+input_arrivals = "BEL" #str(input('Digite as siglas do aeroporto de chegada: '))
+date_arrivals = "19/06/2024" #data de volta
+value_travels = 2000 #digite o valor que podes pagar em uma passagem sem pontos
 
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
@@ -80,8 +80,12 @@ div = soup.find('div', class_='YMlIz FpEdX jLMuyc')
 span = div.find('span')
 span_content = span.text
 
-span_no_dol = span_content.replace("R$", "")
-value_travels_search = int(span_no_dol.replace(" ", ""))
+span_no_dol = span_content.replace("R$", "") #remover R$
+span_no_dol_no_dot = span_no_dol.replace(".", "") #remover .
+print(int(span_no_dol_no_dot))
+print("----------")
+
+value_travels_search = int(span_no_dol_no_dot)
 
 print("O valor da passagem menor é: ", span_content)
 print("-------------------------------------------")
