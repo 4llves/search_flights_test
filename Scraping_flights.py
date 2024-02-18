@@ -9,11 +9,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver import Keys, ActionChains
 from bs4 import BeautifulSoup
 
-input_departures = "REC" #str(input('Digite as siglas do aeroporto de partida: '))
-date_departure = "16/06/2024" #data de ida
-input_arrivals = "BEL" #str(input('Digite as siglas do aeroporto de chegada: '))
-date_arrivals = "19/06/2024" #data de volta
-value_travels = 2000 #digite o valor que podes pagar em uma passagem sem pontos
+input_departures = str(input('Digite as siglas do aeroporto de partida: ')) #Ex: BEL par Belém
+print("Digite a data com barras Ex: 16/02/2024")
+date_departure = str(input('Digite a data de partida: ')) #Digite a data com barras
+input_arrivals = str(input('Digite as siglas do aeroporto de destino: ')) #Ex: GRU para Guarulhos São Paulo
+print("Digite a data com barras Ex: 16/02/2024")
+date_departure = str(input('Digite a data de retorno: ')) #Digite a data com barras
+print("Ao digitar o valor use somente numeros, por favor não usar pontos, virgulas ou caracteres especiais")
+print("Ex: 2000 para R$ 2.000,00")
+value_travels = int(input('Digite o valor disponível para viagem: ')) #Digite o valor que podes pagar em uma passagem sem pontos
 
 options = webdriver.ChromeOptions()
 options.add_argument("--start-maximized")
