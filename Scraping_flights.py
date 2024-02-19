@@ -14,7 +14,7 @@ print("Digite a data com barras Ex: 16/02/2024")
 date_departure = str(input('Digite a data de partida: ')) #Digite a data com barras
 input_arrivals = str(input('Digite as siglas do aeroporto de destino: ')) #Ex: GRU para Guarulhos São Paulo
 print("Digite a data com barras Ex: 16/02/2024")
-date_departure = str(input('Digite a data de retorno: ')) #Digite a data com barras
+date_arrivals = str(input('Digite a data de retorno: ')) #Digite a data com barras
 print("Ao digitar o valor use somente numeros, por favor não usar pontos, virgulas ou caracteres especiais")
 print("Ex: 2000 para R$ 2.000,00")
 value_travels = int(input('Digite o valor disponível para viagem: ')) #Digite o valor que podes pagar em uma passagem sem pontos
@@ -61,11 +61,11 @@ t.sleep(1)
 driver.find_element(By.XPATH, "(//div[contains(@class, 'NA5Egc') and contains(@class, 'ESCxub') and contains(@class, 'fXx9Lc') and contains(@class, 'cd29Sd') and contains(@class, 'wg2eAc')])[1]").click()
 t.sleep(1)
 driver.find_element(By.XPATH, "(//input[contains(@class, 'TP4Lpb') and contains(@class, 'eoY5cb') and contains(@class, 'j0Ppje')])[3]").send_keys(f"{date_departure}")
-t.sleep(1)
+t.sleep(2)
 driver.find_element(By.XPATH, "(//input[contains(@class, 'TP4Lpb') and contains(@class, 'eoY5cb') and contains(@class, 'j0Ppje')])[3]").send_keys(Keys.ENTER)
 t.sleep(1)
 driver.find_element(By.XPATH, "(//input[contains(@class, 'TP4Lpb') and contains(@class, 'eoY5cb') and contains(@class, 'j0Ppje')])[4]").send_keys(f"{date_arrivals}")
-t.sleep(1)
+t.sleep(2)
 driver.find_element(By.XPATH, "(//input[contains(@class, 'TP4Lpb') and contains(@class, 'eoY5cb') and contains(@class, 'j0Ppje')])[4]").send_keys(Keys.ENTER)
 t.sleep(1)
 driver.find_element(By.XPATH, "//div[contains(@class, 'WXaAwc')]//button").send_keys(Keys.ENTER)
