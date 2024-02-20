@@ -105,7 +105,7 @@ value_travels_search = search_travels()
 
 while value_travels >= value_travels_search:    
     message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
-    send_message(token, chat_id, message)    
+    send_message(token, chat_id, message)
     break
 else:
     print("Não encontrei dessa vez... em 1h pesquisarei novamente!")
