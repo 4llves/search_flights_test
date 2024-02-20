@@ -1,8 +1,5 @@
 # importar biblioteca para requisições http
 import requests
-from dotenv import load_dotenv
-import os
-load_dotenv()
 
 # enviar mensagens utilizando o bot para um chat específico
 def send_message(token, chat_id, message):

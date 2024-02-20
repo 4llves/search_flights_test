@@ -15,15 +15,15 @@ load_dotenv()
 token = os.environ["token_telegram"]
 chat_id = os.environ["chat_id"]
 
-input_departures = str('REC') #str(input('Digite as siglas do aeroporto de partida: ')) #Ex: BEL par Belém # 
+input_departures = str(input('Digite as siglas do aeroporto de partida: ')) #Ex: BEL par Belém # str('REC') #
 print("Digite a data com barras Ex: 16/02/2024")
-date_departure = str('17/12/2024') #str(input('Digite a data de partida: ')) #Digite a data com barras # 
-input_arrivals = str('CNF') #str(input('Digite as siglas do aeroporto de destino: ')) #Ex: GRU para Guarulhos São Paulo # 
+date_departure = str(input('Digite a data de partida: ')) #Digite a data com barras # str('17/12/2024') #
+input_arrivals = str(input('Digite as siglas do aeroporto de destino: ')) #Ex: GRU para Guarulhos São Paulo # str('CNF') #
 print("Digite a data com barras Ex: 16/02/2024")
-date_arrivals = str('29/12/2024') #str(input('Digite a data de retorno: ')) #Digite a data com barras # 
+date_arrivals = str(input('Digite a data de retorno: ')) #Digite a data com barras # str('29/12/2024') #
 print("Ao digitar o valor use somente numeros, por favor não usar pontos, virgulas ou caracteres especiais")
 print("Ex: 2000 para R$ 2.000,00")
-value_travels = int(2000) #int(input('Digite o valor disponível para viagem: ')) #Digite o valor que podes pagar em uma passagem sem pontos # 
+value_travels = int(input('Digite o valor disponível para viagem: ')) #Digite o valor que podes pagar em uma passagem sem pontos # int(2000) #
 
 def search_travels():
     options = webdriver.ChromeOptions()
@@ -105,8 +105,7 @@ value_travels_search = search_travels()
 
 while value_travels >= value_travels_search:    
     message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
-    send_message(token, chat_id, message)
-    # print("Opa... Compra a passagem e vamo viajar!!")
+    send_message(token, chat_id, message)    
     break
 else:
     print("Não encontrei dessa vez... em 1h pesquisarei novamente!")
