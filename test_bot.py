@@ -11,6 +11,10 @@ bot = telebot.TeleBot(token)
 def start(msg):
     bot.reply_to(msg, "Vou lhe perguntar alguns dados do voo, por favor responda de acordo com os exemplos")
 
+@bot.message_handler(commands=["options"])
+def start(msg):
+    bot.reply_to(msg, "Vou lhe listar as opções")
+
 def vefiry(msg):    
     return True
 
@@ -19,6 +23,7 @@ def response(msg):
     texto = """
     Olá, sou o Flights Search, seu bot para encontrar passagens a custo benefício ^^:
         /start inicia a inserção de dados
+        /options opões de voo
     Responder qualquer outra coisa não vai funcionar. Clique na opção de inicio."""
 
     bot.reply_to(msg, texto)
