@@ -15,6 +15,11 @@ load_dotenv()
 token = os.environ["token_telegram"]
 chat_id = os.environ["chat_id"]
 
+"""
+    add pesquisa por quantidade de pessoas
+    condicionais se for auldo ou crianças
+"""
+
 input_departures = str(input('Digite as siglas do aeroporto de partida: ')) #Ex: BEL par Belém # str('REC') #
 print("Digite a data com barras Ex: 16/02/2024")
 date_departure = str(input('Digite a data de partida: ')) #Digite a data com barras # str('17/12/2024') #
@@ -95,18 +100,32 @@ def search_travels():
 
     value_travels_search = int(span_no_dol_no_dot)
 
+    print('--------------------')
+    print('o valor encontrado é de R$: ', value_travels_search)
+    print('--------------------')
+
     t.sleep(2)  # Aguarde um pouco para que os resultados sejam exibidos
+
+    if (value_travels >= value_travels_search):
+        message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
+        print(message)
+        # send_message(token, chat_id, message)
+    else:
+        print("Não encontrei dessa vez... em 1h pesquisarei novamente!")
+
 
     driver.quit()
 
-    return value_travels_search
+    # return value_travels_search
 
-value_travels_search = search_travels()
+# value_travels_search = search_travels()
 
-while value_travels >= value_travels_search:    
-    message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
-    send_message(token, chat_id, message)
-    break
-else:
-    print("Não encontrei dessa vez... em 1h pesquisarei novamente!")
-    t.sleep(20) #coloquei 20 seg pra test
+# while value_travels >= value_travels_search:
+#     message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
+#     send_message(token, chat_id, message)
+#     break
+# else:
+#     print("Não encontrei dessa vez... em 1h pesquisarei novamente!")
+#     t.sleep(20) #coloquei 20 seg pra test
+
+search_travels()

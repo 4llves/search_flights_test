@@ -51,11 +51,11 @@ def start(msg):
 # def start(msg):
 #     bot.reply_to(msg, "Digite a data de partida. Ex: 31/12/2024")
 
-def verify(msg):    
+def verify(msg):
     return True
 
 @bot.message_handler(func=verify)
-def response(msg):    
+def response(msg):
     user = msg.chat.first_name
     text_info = f"""
     Olá {user}, sou o Flights Search, seu bot para encontrar passagens a custo benefício 😉:        

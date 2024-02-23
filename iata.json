@@ -1,0 +1,420 @@
+{
+    "data": [
+        {
+            "iata": "BSB",
+            "icao": "SBBR",
+            "airport_name": "Aeroporto Internacional de Brasília / Presidente Jucelino Kubitschek",
+            "city": "Brasília",
+            "uf": "DF",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CGH",
+            "icao": "SBSP",
+            "airport_name": "Aeroporto Internacional de São Paulo / Congonhas",
+            "city": "Congonhas",
+            "uf": "SP",
+            "country": "Brasil"
+        },
+        {
+            "iata": "GIG",
+            "icao": "SBGL",
+            "airport_name": "Aeroporto Internacional do Rio de Janeiro / Galeão-Antônio Carlos Jobim",
+            "city": "Galeão",
+            "uf": "RJ",
+            "country": "Brasil"
+        },
+        {
+            "iata": "SSA",
+            "icao": "SBSV",
+            "airport_name": "Aeroporto Internacional de Salvador / Deputado Luis Eduardo Magalhães",
+            "city": "Salvador",
+            "uf": "BA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "FLN",
+            "icao": "SBFL",
+            "airport_name": "Aeroporto Internacional de Florianópolis / Hercílio Luz",
+            "city": "Florianópolis",
+            "uf": "SC",
+            "country": "Brasil"
+        },
+        {
+            "iata": "POA",
+            "icao": "SBPA",
+            "airport_name": "Aeroporto Internacional de Porto Alegre / Salgado Filho",
+            "city": "Porto Alegre",
+            "uf": "RS",
+            "country": "Brasil"
+        },
+        {
+            "iata": "VCP",
+            "icao": "SBKP",
+            "airport_name": "Aeroporto Internacional de Viracopos / Campinas",
+            "city": "Campinas",
+            "uf": "SP",
+            "country": "Brasil"
+        },
+        {
+            "iata": "REC",
+            "icao": "SBRF",
+            "airport_name": "Aeroporto Internacional do Recife/ Guararapes – Gilberto Freyre",
+            "city": "Recife",
+            "uf": "PE",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CWB",
+            "icao": "SBCT",
+            "airport_name": "Aeroporto Internacional de Curitiba / Afonso Pena",
+            "city": "Curitiba",
+            "uf": "PR",
+            "country": "Brasil"
+        },
+        {
+            "iata": "BEL",
+            "icao": "SBBE",
+            "airport_name": "Aeroporto Internacional de Belém / Val de Cans",
+            "city": "Belém",
+            "uf": "PA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "VIX",
+            "icao": "SBVT",
+            "airport_name": "Aeroporto de Vitória – Eurico de Aguiar Salles",
+            "city": "Vitória",
+            "uf": "ES",
+            "country": "Brasil"
+        },
+        {
+            "iata": "SDU",
+            "icao": "SBRJ",
+            "airport_name": "Aerorporto Santos Dumont",
+            "city": "Santos Dumont",
+            "uf": "RJ",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CGB",
+            "icao": "SBCY",
+            "airport_name": "Aeroporto Internacional de Cuiabá / Marechal Rondon",
+            "city": "Cuiabá",
+            "uf": "MT",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CGR",
+            "icao": "SBCG",
+            "airport_name": "Aeroporto Internacional de Campo Grande",
+            "city": "Campo Grande",
+            "uf": "MS",
+            "country": "Brasil"
+        },
+        {
+            "iata": "FOR",
+            "icao": "SBFZ",
+            "airport_name": "Aeroporto Internacional de Fortaleza / Pinto Martins",
+            "city": "Fortaleza",
+            "uf": "CE",
+            "country": "Brasil"
+        },
+        {
+            "iata": "MCP",
+            "icao": "SBMQ",
+            "airport_name": "Aeroporto Internacional de Macapá",
+            "city": "Macapá",
+            "uf": "AP",
+            "country": "Brasil"
+        },
+        {
+            "iata": "MGF",
+            "icao": "SBMG",
+            "airport_name": "Aeroporto Regional de Maringá / Silvio Name Junior",
+            "city": "Maringá",
+            "uf": "PR",
+            "country": "Brasil"
+        },
+        {
+            "iata": "GYN",
+            "icao": "SBGO",
+            "airport_name": "Aeroporto de Goiânia / Santa Genoveva",
+            "city": "Goiânia",
+            "uf": "GO",
+            "country": "Brasil"
+        },
+        {
+            "iata": "NVT",
+            "icao": "SBNF",
+            "airport_name": "Aeroporto Internacional de Navegantes / Ministro Victor Konder",
+            "city": "Navegantes",
+            "uf": "SC",
+            "country": "Brasil"
+        },
+        {
+            "iata": "MAO",
+            "icao": "SBEG",
+            "airport_name": "Aeroporto Internacional de Manaus / Eduardo Gomes",
+            "city": "Manaus",
+            "uf": "AM",
+            "country": "Brasil"
+        },
+        {
+            "iata": "NAT",
+            "icao": "SBNT",
+            "airport_name": "Aeroporto Internacional de Natal / Augusto Severo",
+            "city": "Natal",
+            "uf": "RN",
+            "country": "Brasil"
+        },
+        {
+            "iata": "BPS",
+            "icao": "SBPS",
+            "airport_name": "Aeroporto Internacional de Porto Seguro",
+            "city": "Porto Seguro",
+            "uf": "BA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "MCZ",
+            "icao": "SBMO",
+            "airport_name": "Aeroporto de Maceió / Zumbi dos Palmares",
+            "city": "Maceió",
+            "uf": "AL",
+            "country": "Brasil"
+        },
+        {
+            "iata": "PMW",
+            "icao": "SSPS",
+            "airport_name": "Aeroporto de Palmas/Brigadeiro Lysias Rodrigues",
+            "city": "Palmas",
+            "uf": "TO",
+            "country": "Brasil"
+        },
+        {
+            "iata": "SLZ",
+            "icao": "SBSL",
+            "airport_name": "Aeroporto Internacional de São Luís / Marechal Cunha Machado",
+            "city": "São Luis",
+            "uf": "MA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "GRU",
+            "icao": "SBGR",
+            "airport_name": "Aeroporto Internacional de São Paulo/Guarulhos-Governador André Franco Motoro",
+            "city": "Guarulhos",
+            "uf": "SP",
+            "country": "Brasil"
+        },
+        {
+            "iata": "LDB",
+            "icao": "SBLO",
+            "airport_name": "Aeroporto de Londrina / Governador José Richa",
+            "city": "Londrina",
+            "uf": "PR",
+            "country": "Brasil"
+        },
+        {
+            "iata": "PVH",
+            "icao": "SBPV",
+            "airport_name": "Aeroporto Internacional de Porto Velho / Governador Jorge Teixeira de Oliveira",
+            "city": "Porto Velho",
+            "uf": "RO",
+            "country": "Brasil"
+        },
+        {
+            "iata": "RBR",
+            "icao": "SBRB",
+            "airport_name": "Aeroporto Internacional de Rio Branco / Plácido de Castro",
+            "city": "Rio Branco",
+            "uf": "AC",
+            "country": "Brasil"
+        },
+        {
+            "iata": "JOI",
+            "icao": "SBJV",
+            "airport_name": "Aeroporto de Joinville / Lauro Carneiro de Loyola",
+            "city": "Joinville",
+            "uf": "SC",
+            "country": "Brasil"
+        },
+        {
+            "iata": "UDI",
+            "icao": "SBUL",
+            "airport_name": "Aeroporto de Uberlândia / Ten. Cel. Av. César Bombonato",
+            "city": "Uberlândia",
+            "uf": "MG",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CXJ",
+            "icao": "SBCX",
+            "airport_name": "Aeroporto Regional de Caxias do Sul / Hugo Cantergiani",
+            "city": "Caxias do Sul",
+            "uf": "RS",
+            "country": "Brasil"
+        },
+        {
+            "iata": "IGU",
+            "icao": "SBFI",
+            "airport_name": "Aeroporto Internacional de Foz do Iguaçu",
+            "city": "Foz do Iguaçu",
+            "uf": "PR",
+            "country": "Brasil"
+        },
+        {
+            "iata": "THE",
+            "icao": "SBTE",
+            "airport_name": "Aeroporto de Teresina – Senador Petrônio Portella",
+            "city": "Teresina",
+            "uf": "PI",
+            "country": "Brasil"
+        },
+        {
+            "iata": "AJU",
+            "icao": "SBAR",
+            "airport_name": "Aeroporto Internacional de Aracaju / Santa Maria",
+            "city": "Aracaju",
+            "uf": "SE",
+            "country": "Brasil"
+        },
+        {
+            "iata": "JPA",
+            "icao": "SBJP",
+            "airport_name": "Aeroporto Internacional de João Pessoa / Presidente Castro Pinto",
+            "city": "João Pessoa",
+            "uf": "PB",
+            "country": "Brasil"
+        },
+        {
+            "iata": "PNZ",
+            "icao": "SBPL",
+            "airport_name": "Aeroporto de Petrolina / Senador Nilo Coelho",
+            "city": "Petrolina",
+            "uf": "PE",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CNF",
+            "icao": "SBCF",
+            "airport_name": "Aeroporto Internacional de Minas Gerais / Confins – Tancredo Neves",
+            "city": "Confins",
+            "uf": "MG",
+            "country": "Brasil"
+        },
+        {
+            "iata": "BVB",
+            "icao": "SBBV",
+            "airport_name": "Aeroporto Internacional de Boa Vista / Atlas Brasil Cantanhede",
+            "city": "Boa Vista",
+            "uf": "RR",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CPV",
+            "icao": "SBKG",
+            "airport_name": "Aeroporto de Campina Grande / Presidente João Suassuna",
+            "city": "Campina Grande",
+            "uf": "PB",
+            "country": "Brasil"
+        },
+        {
+            "iata": "STM",
+            "icao": "SBSN",
+            "airport_name": "Aeroporto de Santarém / Maestro Wilson Fonseca",
+            "city": "Santarém",
+            "uf": "PA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "IOS",
+            "icao": "SBIL",
+            "airport_name": "Aeroporto de Ilhéus/Bahia-Jorge Amado",
+            "city": "Ilhéus",
+            "uf": "BA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "JDO",
+            "icao": "SBJU",
+            "airport_name": "Aeroporto de Juazeiro do Norte – Orlando Bezerra",
+            "city": "Juazeiro do Norte",
+            "uf": "CE",
+            "country": "Brasil"
+        },
+        {
+            "iata": "IMP",
+            "icao": "SBIZ",
+            "airport_name": "Aeroporto de Imperatriz – Prefeito Renato Moreira",
+            "city": "Imperatriz",
+            "uf": "MA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "XAP",
+            "icao": "SBCH",
+            "airport_name": "Aeroporto de Chapecó – Serafin Enoss Bertaso",
+            "city": "Chapecó",
+            "uf": "SC",
+            "country": "Brasil"
+        },
+        {
+            "iata": "MAB",
+            "icao": "SBMA",
+            "airport_name": "Aeroporto de Marabá",
+            "city": "Marabá",
+            "uf": "PA",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CZS",
+            "icao": "SBCZ",
+            "airport_name": "Aeroporto Internacional de Cruzeiro do Sul",
+            "city": "Cruzeiro do Sul",
+            "uf": "AC",
+            "country": "Brasil"
+        },
+        {
+            "iata": "PPB",
+            "icao": "SBDN",
+            "airport_name": "Aeroporto Estadual de Presidente Prudente",
+            "city": "Presidente Prudente",
+            "uf": "SP",
+            "country": "Brasil"
+        },
+        {
+            "iata": "CFB",
+            "icao": "SBCB",
+            "airport_name": "Aeroporto Internacional de Cabo Frio",
+            "city": "Cabo Frio",
+            "uf": "RJ",
+            "country": "Brasil"
+        },
+        {
+            "iata": "FEN",
+            "icao": "SBFN",
+            "airport_name": "Aeroporto de Fernando de Noronha",
+            "city": "Fernando de Noronha",
+            "uf": "PE",
+            "country": "Brasil"
+        },
+        {
+            "iata": "JTC",
+            "icao": "SJTC",
+            "airport_name": "Aeroporto Estadual de Bauru/Arealva",
+            "city": "Bauru",
+            "uf": "SP",
+            "country": "Brasil"
+        },
+        {
+            "iata": "MOC",
+            "icao": "SBMK",
+            "airport_name": "Aeroporto de Montes Claros/Mário Ribeiro",
+            "city": "Montes Claros",
+            "uf": "MG",
+            "country": "Brasil"
+        }        
+    ]
+}
