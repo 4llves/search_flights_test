@@ -1,3 +1,4 @@
 .env
 __pycache__
 data.js
+flightssearch_bot.session
