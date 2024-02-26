@@ -1,7 +1,6 @@
-from asyncio import run
 import os
 from dotenv import load_dotenv
-from pyrogram import Client
+from pyrogram import Client, filters
 
 load_dotenv()
 
@@ -12,11 +11,16 @@ app = Client(
     bot_token = os.environ["TELEGRAM_BOT_TOKEN"]
 )
 
-async def main():    
-    await app.start()
-    await app.send_message(
-        'Alves_dev', 'Hello World 😎'
+@app.on_message(filters.command('help'))
+async def help(client, message):
+    print(message.chat.username, message.text)
+    await message.reply(
+        f'Olá {message.chat.username}, sou seu guia para uso do flights search'
     )
-    await app.stop()
 
-run(main())
+@app.on_message()
+async def message(client, message):
+    print(message.chat.username, message.text)
+    await message.reply(message.text + '???')
+
+app.run()
