@@ -12,9 +12,6 @@ from send_message_telegram import send_message
 from dotenv import load_dotenv
 load_dotenv()
 
-token = os.environ["token_telegram"]
-chat_id = os.environ["chat_id"]
-
 """
     add pesquisa por quantidade de pessoas
     condicionais se for auldo ou crianças
