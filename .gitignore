@@ -3,3 +3,5 @@ __pycache__
 data.js
 flightssearch_bot.session
 flightssearch_bot.session-journal
+data_pyrogram.json
+data_telebot.json
