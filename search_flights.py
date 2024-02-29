@@ -104,14 +104,15 @@ def search_travels():
     t.sleep(2)  # Aguarde um pouco para que os resultados sejam exibidos
 
     if (value_travels >= value_travels_search):
-        message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
-        print(message)
-        # send_message(token, chat_id, message)
+            message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
+            print(message)
+            # send_message(token, chat_id, message)
+            driver.quit()
     else:
+        driver.quit()
         print("Não encontrei dessa vez... em 1h pesquisarei novamente!")
-
-
-    driver.quit()
+        t.sleep(10)
+        search_travels()
 
     # return value_travels_search
 
