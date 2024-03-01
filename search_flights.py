@@ -17,6 +17,9 @@ load_dotenv()
     condicionais se for auldo ou crianças
 """
 
+token = os.environ["TELEGRAM_BOT_TOKEN"]
+chat_id = os.environ["TELEGRAM_CHAT_ID_TEST"]
+
 input_departures = str(input('Digite as siglas do aeroporto de partida: ')) #Ex: BEL par Belém # str('REC') #
 print("Digite a data com barras Ex: 16/02/2024")
 date_departure = str(input('Digite a data de partida: ')) #Digite a data com barras # str('17/12/2024') #
@@ -106,7 +109,7 @@ def search_travels():
     if (value_travels >= value_travels_search):
             message = f"Encontramos uma passagem que cabe no seu bolso por: R$ {value_travels_search}"
             print(message)
-            # send_message(token, chat_id, message)
+            send_message(token, chat_id, message)
             driver.quit()
     else:
         driver.quit()

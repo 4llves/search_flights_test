@@ -122,6 +122,7 @@ async def help(client, message):
 
 @app.on_message()
 async def message(client, message):
+    print(message)
     await message.reply(message.text + '???')
 
 print('Rodando...')
