@@ -18,7 +18,7 @@ load_dotenv()
 """
 
 token = os.environ["TELEGRAM_BOT_TOKEN"]
-chat_id = os.environ["TELEGRAM_CHAT_ID_TEST"]
+chat_id = os.environ["TELEGRAM_CHAT_ID_TEST_C"]
 
 input_departures = str(input('Digite as siglas do aeroporto de partida: ')) #Ex: BEL par Belém # str('REC') #
 print("Digite a data com barras Ex: 16/02/2024")

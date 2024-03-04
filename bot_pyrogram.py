@@ -76,7 +76,12 @@ async def start(client, message):
 async def help(client, message):
     print(message.chat.username, message.text)
     await message.reply(
-        f'Olá {message.chat.username}, sou seu guia para uso do flights search, click em /start para iniciarmos'
+        f'Olá {message.chat.username}, sou seu guia para uso do flights search:'
+        'temos as seguintes opções: '
+        '''
+            /start
+            /chatid            
+        '''
     )
 
 @app.on_message(filters.command('chatid'))
