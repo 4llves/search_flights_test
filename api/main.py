@@ -10,23 +10,6 @@ class Travel(BaseModel):
 
 app = FastAPI()
 
-travels = {
-    1: {
-        "input_departures": "BEL",
-        "date_departure": "14/03/2024",
-        "input_arrivals": "GRU",
-        "date_arrivals": "20/03/2024",
-        "value_travels": 1000,
-    },
-    2: {
-        "input_departures": "CGH",
-        "date_departure": "23/03/2024",
-        "input_arrivals": "GIG",
-        "date_arrivals": "29/03/2024",
-        "value_travels": 2000,
-    }
-}
-
 @app.get("/")
 async def home():
     return {"Travel": len(travels)}
